@@ -23,8 +23,9 @@ export default defineConfig({
   },
   plugins: [vue(), vueJsx({}), Unocss()],
   // 添加库模式配置
-
+ 
   build: {
+    sourcemap: true, // 输出单独 source文件
     rollupOptions,
     minify: false,
     cssCodeSplit: true,
